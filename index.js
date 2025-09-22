@@ -104,7 +104,7 @@ function getGreeting(name, time) {
   } else if (time >= 18 && time <= 23) {
     greeting = "God Kveld";
   }
-  
+
   if ((time < 0) | (time > 23)) {
     return `Ugyldig Tid`;
   } else {
@@ -384,9 +384,9 @@ Returner "😎Kun primitive verdier😎".
 
 function smartAss(param) {
   if (typeof param === "string") {
-    return "😎" + param + "😎";
+    return `😎${param}😎`;
   } else if (typeof param === "number") {
-    return "😎" + param * 2 + "😎";
+    return `😎${param * 2}😎`;
   } else if (typeof param === "boolean") {
     if (param === true) {
       return "😎Ja😎";
