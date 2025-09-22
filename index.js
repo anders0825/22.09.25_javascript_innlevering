@@ -104,7 +104,7 @@ function getGreeting(name, time) {
   } else if (time >= 18 && time <= 23) {
     greeting = "God Kveld";
   }
-
+  
   if ((time < 0) | (time > 23)) {
     return `Ugyldig Tid`;
   } else {
@@ -184,7 +184,7 @@ Eksempel 3: "   vanskelig        " skal returnere "gøy".
 let str1 = "  Javascript er vanskelig   ";
 let str2 = " Det er vanskelig å bruke metoder ";
 let str3 = "   vanskelig        ";
-let str4 = "       Det er så vanskelig å være Vanskelig i vanskeligere tider";
+let str4 = "       Det er så vanskelig å være Vanskelig i van skeligeretider";
 
 function getPositiveTrim(str) {
   let strPositive = str.replace(/\bvanskelig\b/gi, "gøy");

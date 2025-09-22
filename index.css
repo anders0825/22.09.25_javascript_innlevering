@@ -1,26 +1,109 @@
+/* 
+Colors: 
+Spring:
+  --text: #282828;
+  --nautral-warm: #faf2eb;
+  --nautral-cold: #e6eaed;
+  --accent: #f4bb83;
+  --primary-warm: #938b75;
+  --primary-cold: #cecfe2;
+
+
+Sherwin Williams:
+    --text: #282828;
+    --nautral-warm: #DBCAB2;
+    --nautral-cold: #E8E3D9;
+    --accent: #B87458;
+    --primary-warm: #536972;
+    --primary-cold: #A6B2B5;
+
+Benjamin Moore:
+    --text: #364042;
+    --nautral-warm: #F0E2D2;
+    --nautral-cold: #EFEEE5;
+    --accent: #D18266;
+    --primary-warm: #5B6D92;
+    --primary-cold: #D5E3E6;
+
+*/
+
+:root {
+  --text: #232a2b;
+  --nautral-warm: #f0e2d2;
+  --nautral-cold: #efeee5;
+  --accent: #d18266;
+  --primary-warm: #5b6d92;
+  --primary-cold: #d5e3e6;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #141819;
+}
+
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-}
 
-body {
-  background-color: rgb(225, 225, 225);
-  color: rgb(20, 20, 20);
+  box-sizing: border-box;
+
   line-height: 1.5;
 }
 
-header {
+body {
   width: 100svw;
-  text-align: center;
-  border-bottom: 2px solid rgb(20, 20, 20);
-  padding: 20px;
+
+  background-color: var(--nautral-cold);
+
+  color: var(--text);
 }
 
-div {
+.doc-edge {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  font-size: 15px;
+  width: 100svw;
+  height: 20svh;
+
+  background-color: var(--primary-cold);
+  color: var(--text);
+
+  border-top: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
+}
+
+#header-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+#javascript-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+
+  width: 100svw;
+
+  padding: 50px;
+}
+
+#javascript-section pre {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row nowrap;
+
+  width: 80svw;
+  max-width: fit-content;
+  overflow: scroll;
+
+  margin: 20px;
+  padding: 20px;
+
+  border: 5px solid var(--accent);
+  background-color: var(--nautral-warm);
 }
