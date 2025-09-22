@@ -184,7 +184,7 @@ Eksempel 3: "   vanskelig        " skal returnere "gøy".
 let str1 = "  Javascript er vanskelig   ";
 let str2 = " Det er vanskelig å bruke metoder ";
 let str3 = "   vanskelig        ";
-let str4 = "       Det er så vanskelig å være Vanskelig i van skeligeretider";
+let str4 = "       Det er så vanskelig å være Vanskelig i vanskeligere tider";
 
 function getPositiveTrim(str) {
   let strPositive = str.replace(/\bvanskelig\b/gi, "gøy");
